@@ -1,13 +1,19 @@
 
 import './App.css'
+import NavBar from './Components/Navbar/NavBar'
+import Banner from './Components/Banner/Banner';
+import Poster from './Components/Poster/Poster';
+import AllProducts from './Components/Allproducts/AllProducts';
 
 function App() {
  
 
   return (
     <>
-      <h1 className='text-4xl'>check tailwind css</h1>
-      <button className='btn btn-active'> daisy check again</button>
+      <NavBar></NavBar>
+      <Banner></Banner>
+      <Poster></Poster>
+      <AllProducts></AllProducts>
     </>
   )
 }

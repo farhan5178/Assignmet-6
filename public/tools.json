@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Create professional resumes with AI-powered suggestions.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "FaFileAlt"
+  },
+  {
+    "id": 2,
+    "name": "Social Media Scheduler",
+    "description": "Plan and automate your social media posts easily.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Auto posting", "Multi-platform support", "Analytics dashboard"],
+    "icon": "FaCalendarAlt"
+  },
+  {
+    "id": 3,
+    "name": "Logo Maker Pro",
+    "description": "Design stunning logos with AI tools.",
+    "price": 29.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Custom logos", "High-resolution export", "Brand kits"],
+    "icon": "FaPaintBrush"
+  },
+  {
+    "id": 4,
+    "name": "Website Builder",
+    "description": "Build responsive websites without coding.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Drag & drop editor", "SEO tools", "Custom domains"],
+    "icon": "FaGlobe"
+  },
+  {
+    "id": 5,
+    "name": "Email Marketing Suite",
+    "description": "Create and manage email campaigns effectively.",
+    "price": 24.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Email templates", "Automation workflows", "Performance tracking"],
+    "icon": "FaEnvelope"
+  },
+  {
+    "id": 6,
+    "name": "AI Content Writer",
+    "description": "Generate high-quality content in seconds.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Blog writing", "SEO optimization", "Multi-language support"],
+    "icon": "FaPenNib"
+  },
+  {
+    "id": 7,
+    "name": "Video Editor Pro",
+    "description": "Edit videos with advanced tools and effects.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["4K editing", "Transitions & effects", "Audio editing"],
+    "icon": "FaVideo"
+  },
+  {
+    "id": 8,
+    "name": "Cloud Storage Plus",
+    "description": "Secure and scalable cloud storage solution.",
+    "price": 5.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["100GB storage", "File sharing", "Data encryption"],
+    "icon": "FaCloud"
+  },
+  {
+    "id": 9,
+    "name": "Task Management Tool",
+    "description": "Organize tasks and boost productivity.",
+    "price": 7.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Kanban boards", "Team collaboration", "Deadline tracking"],
+    "icon": "FaTasks"
+  },
+  {
+    "id": 10,
+    "name": "Online Course Platform",
+    "description": "Create and sell online courses بسهولة.",
+    "price": 59.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Course builder", "Payment integration", "Student analytics"],
+    "icon": "FaGraduationCap"
+  }
+]
