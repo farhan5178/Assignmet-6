@@ -1,5 +1,5 @@
 import {use} from 'react';
-import IconImg from '../../assets/products/writing_2327400 1.png'
+// import IconImg from '../../assets/products/writing_2327400 1.png'
 import { FaCheck } from "react-icons/fa";
 
 
@@ -17,14 +17,21 @@ const ProductCard = () => {
                   
                    <div className=' card bg-base-100 w-96 shadow-sm p-4'>
                      <div className='flex justify-between mb-4'>
-                        <img src={IconImg} alt="" />
+                        <span className='text-2xl'>{product.icon}</span>
                         <div className="badge badge-soft badge-warning">{product.tag}</div>
                      </div>
                      <div className='mb-4 '>
                         <h3 className='text-2xl font-bold'>{product.name}</h3>
                      <p className='text-[#627382] text-[16px]'>{product.description}</p>
                      <p><span className='font-semibold text-2xl'>{product.price}</span><span className='text-[#627382] text-[16px]'>/mo</span></p>
-                     <p className='text-[#627382] text-[16px]'>{product.features}</p>
+                    <ul className='text-[#627382] text-[16px] '>
+  {product.features.map((feature, index) => (
+    <li key={index} className="flex items-center gap-2">
+      <FaCheck className="text-green-500" />
+      {feature}
+    </li>
+  ))}
+</ul>
                     
                      </div>
                      <div className='text-center'>
