@@ -24,7 +24,7 @@ Explore Products
 </p>
                     <div className='flex gap-4'>
                         <button className='btn bg-linear-to-r from-blue-500 to-purple-600 text-[#FFFFFF]'>Explore Products</button>
-                        <button className='btn text-blue-500'> <CiPlay1 />
+                        <button className='btn text-[#4F39F6]'> <CiPlay1 />
  Watch Demo</button>
                     </div>
                     </div>

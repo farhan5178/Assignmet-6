@@ -1,4 +1,5 @@
 
+import ProductCard from './../ProductCard/ProductCard';
 
 const AllProducts = () => {
     return (
@@ -14,7 +15,10 @@ const AllProducts = () => {
 
             </div>
             {/* dynamic content */}
-            <div></div>
+
+            <div>
+                <ProductCard></ProductCard>
+            </div>
             
         </div>
     );
