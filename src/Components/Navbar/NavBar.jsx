@@ -21,7 +21,7 @@ const NavBar = ({ carts }) => {
             <span className="badge badge-sm indicator-item">{carts.length}</span>
           </div>
           <p className="hidden sm:block text-sm md:text-base">Login</p>
-          <button className='btn text-xs sm:text-sm md:text-base px-3 md:px-5 bg-linear-to-r from-blue-500 to-purple-600 text-[#FFFFFF]'>Get Started</button>
+          <button className='btn text-xs sm:text-sm md:text-base px-3 md:px-5 bg-linear-to-r from-blue-500 to-purple-600 text-[#FFFFFF] rounded-full'>Get Started</button>
         </div>
       </nav>
 

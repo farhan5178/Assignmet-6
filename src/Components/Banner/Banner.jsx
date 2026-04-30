@@ -19,8 +19,8 @@ software—all in one place. Start creating faster today. <br className="hidden 
 Explore Products
 </p>
                     <div className='flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4'>
-                        <button className='btn text-sm sm:text-base bg-linear-to-r from-blue-500 to-purple-600 text-[#FFFFFF]'>Explore Products</button>
-                        <button className='btn text-sm sm:text-base text-[#4F39F6]'> <CiPlay1 />
+                        <button className='btn text-sm sm:text-base bg-linear-to-r from-blue-500 to-purple-600 text-[#FFFFFF] rounded-full'>Explore Products</button>
+                        <button className='btn text-sm sm:text-base text-[#4F39F6] rounded-full'> <CiPlay1 />
  Watch Demo</button>
                     </div>
                     </div>
