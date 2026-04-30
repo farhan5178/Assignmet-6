@@ -34,7 +34,15 @@ const ProductCard = ({carts,setCarts}) => {
                    className=' card bg-base-100 w-96 shadow-sm p-4'>
                      <div className='flex justify-between mb-4'>
                         <span className='text-2xl'>{product.icon}</span>
-                        <div className="badge badge-soft badge-warning">{product.tag}</div>
+                      <div 
+  className={`badge badge-soft 
+    ${product.tagType === "popular" ? "badge-primary" : 
+     product.tagType === "best seller" ? "badge-success" : 
+     product.tagType === "new" ? "badge-info" : "badge-warning"}`}
+>
+  {product.tag}
+</div>
+
                      </div>
                      <div className='mb-4 '>
                         <h3 className='text-2xl font-bold'>{product.name}</h3>
