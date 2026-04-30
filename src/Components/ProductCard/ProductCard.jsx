@@ -3,8 +3,6 @@ import {use} from 'react';
 import { FaCheck } from "react-icons/fa";
 import toast from './../../../node_modules/react-hot-toast/src/index';
 
-
-
 // fetch data api call 
 const productsPromise=fetch('./tools.json').then(res=>res.json());
 const ProductCard = ({carts,setCarts}) => {
@@ -24,14 +22,14 @@ const ProductCard = ({carts,setCarts}) => {
     console.log(carts)
 
     return (
-        <div className='grid grid-cols-3 justify-center mt-10 mx-25 gap-4'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center mt-10 px-4 md:px-8 lg:px-20 gap-4'>
             {/* dynamic data showing in card  */}
             {
                 products.map(product=>(
                   
                    <div 
                    key={product.id}
-                   className=' card bg-base-100 w-96 shadow-sm p-4'>
+                   className=' card bg-base-100 w-full max-w-sm mx-auto shadow-sm p-4'>
                      <div className='flex justify-between mb-4'>
                         <span className='text-2xl'>{product.icon}</span>
                       <div 
@@ -45,10 +43,10 @@ const ProductCard = ({carts,setCarts}) => {
 
                      </div>
                      <div className='mb-4 '>
-                        <h3 className='text-2xl font-bold'>{product.name}</h3>
-                     <p className='text-[#627382] text-[16px]'>{product.description}</p>
-                     <p><span className='font-semibold text-2xl'>{product.price}</span><span className='text-[#627382] text-[16px]'>/mo</span></p>
-                    <ul className='text-[#627382] text-[16px] '>
+                        <h3 className='text-xl md:text-2xl font-bold'>{product.name}</h3>
+                     <p className='text-[#627382] text-sm md:text-[16px]'>{product.description}</p>
+                     <p><span className='font-semibold text-xl md:text-2xl'>{product.price}</span><span className='text-[#627382] text-sm md:text-[16px]'>/mo</span></p>
+                    <ul className='text-[#627382] text-sm md:text-[16px] '>
   {product.features.map((feature, index) => (
     <li key={index} className="flex items-center gap-2">
       <FaCheck className="text-green-500" />
@@ -58,11 +56,11 @@ const ProductCard = ({carts,setCarts}) => {
 </ul>
                     
                      </div>
-                     <div className='text-center pl-12'>
+                     <div className='text-center'>
           <button 
   disabled={isInCart(product.id)}
   onClick={() => addToCart(product)}
-  className={`btn btn-wide rounded-full flex items-center justify-center gap-2
+  className={`btn w-full rounded-full flex items-center justify-center gap-2
     ${isInCart(product.id)
       ? "!bg-green-500 !text-white"
       : "bg-gradient-to-r from-blue-500 to-purple-600 text-white"}
