@@ -19,7 +19,7 @@ const Carts = ({setCarts,carts}) => {
         }
 
         setCarts([]);
-        toast.success("Checkout successful 🎉");
+        toast.success("Checkout successful! Thank you for your purchase.");
     }
 
     if(carts.length==0){
