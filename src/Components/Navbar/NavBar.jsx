@@ -24,7 +24,7 @@ const NavBar = ({carts}) => {
   {carts.length}
 </span>        </div>
                 <p>Login</p>
-                <button className='btn bg-linear-to-r from-blue-500 to-purple-600 text-[#FFFFFF]'>Get Started</button>
+                <button className='btn bg-linear-to-r from-blue-500 to-purple-600 text-[#FFFFFF] rounded-full'>Get Started</button>
 
                 
             </div>
