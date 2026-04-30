@@ -1,21 +1,36 @@
 import {use} from 'react';
 // import IconImg from '../../assets/products/writing_2327400 1.png'
 import { FaCheck } from "react-icons/fa";
+import toast from './../../../node_modules/react-hot-toast/src/index';
 
 
 
 // fetch data api call 
 const productsPromise=fetch('./tools.json').then(res=>res.json());
-const ProductCard = () => {
+const ProductCard = ({carts,setCarts}) => {
     const products=use(productsPromise)
-    console.log(products)
+    //  console.log(products)
+    const addToCart=(product)=>{
+           const isExist=carts.find(c=>c.id===product.id);
+           if (isExist){
+            toast.error('item is already added')
+            return
+           }
+        setCarts([...carts,product]) // destructuring ager cart er info jeno delete na hoy
+        console.log(carts);
+        toast.success('item added to cart')
+    }
+    console.log(carts)
+
     return (
         <div className='grid grid-cols-3 justify-center mt-10 mx-25 gap-4'>
             {/* dynamic data showing in card  */}
             {
                 products.map(product=>(
                   
-                   <div className=' card bg-base-100 w-96 shadow-sm p-4'>
+                   <div 
+                   key={product.id}
+                   className=' card bg-base-100 w-96 shadow-sm p-4'>
                      <div className='flex justify-between mb-4'>
                         <span className='text-2xl'>{product.icon}</span>
                         <div className="badge badge-soft badge-warning">{product.tag}</div>
@@ -35,7 +50,7 @@ const ProductCard = () => {
                     
                      </div>
                      <div className='text-center'>
-                        <button  className='btn btn-wide bg-linear-to-r from-blue-500 to-purple-600 rounded-full'>Buy Now</button>
+                        <button onClick={()=>addToCart(product)}  className='btn btn-wide bg-linear-to-r from-blue-500 to-purple-600 rounded-full'>Buy Now</button>
                      </div>
                    </div>
                 ))
