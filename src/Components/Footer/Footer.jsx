@@ -5,11 +5,11 @@ const Footer = () => {
     <footer className="bg-[#0B1220] text-gray-300 mt-20">
       
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-5 gap-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-10 md:py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
 
         {/* Logo + Description */}
-        <div className="md:col-span-2">
-          <h1 className="text-2xl font-bold text-white mb-4">DigiTools</h1>
+        <div className="sm:col-span-2 lg:col-span-2">
+          <h1 className="text-xl md:text-2xl font-bold text-white mb-4">DigiTools</h1>
           <p className="text-sm text-gray-400 max-w-sm">
             Premium digital tools for creators, professionals, and businesses.
             Work smarter with our suite of powerful tools.
@@ -68,10 +68,10 @@ const Footer = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="border-t border-gray-700 py-4 px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+      <div className="border-t border-gray-700 py-4 px-4 md:px-6 flex flex-col md:flex-row justify-between items-center text-xs sm:text-sm text-gray-400 text-center md:text-left">
         <p>© 2026 Digitools. All rights reserved.</p>
 
-        <div className="flex gap-6 mt-2 md:mt-0">
+        <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6 mt-2 md:mt-0">
           <span className="cursor-pointer hover:text-white">Privacy Policy</span>
           <span className="cursor-pointer hover:text-white">Terms of Service</span>
           <span className="cursor-pointer hover:text-white">Cookies</span>
