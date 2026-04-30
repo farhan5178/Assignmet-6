@@ -12,7 +12,7 @@ const Banner = () => {
                        <div className="badge badge-soft badge-primary mb-4" > <FaRegDotCircle />
  New: AI-Powered Tools Available</div>
                       </div>
-                       <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 '>Supercharge Your <br />Digital Workflow</h1>
+                       <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 '>Supercharge Your <br /><span className="text-[#4F39F6]">Digital Workflow</span></h1>
                        <p className='text-[#627382] text-sm sm:text-base md:text-[18px] mb-6 md:mb-8'>Access premium AI tools, design assets, templates, and productivity <br className="hidden md:block" />
 software—all in one place. Start creating faster today. <br className="hidden md:block" />
 

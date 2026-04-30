@@ -45,7 +45,7 @@ const ProductCard = ({carts,setCarts}) => {
                      <div className='mb-4 '>
                         <h3 className='text-xl md:text-2xl font-bold'>{product.name}</h3>
                      <p className='text-[#627382] text-sm md:text-[16px]'>{product.description}</p>
-                     <p><span className='font-semibold text-xl md:text-2xl'>{product.price}</span><span className='text-[#627382] text-sm md:text-[16px]'>/mo</span></p>
+                     <p><span className='font-semibold text-xl md:text-2xl'>$ {product.price}</span><span className='text-[#627382] text-sm md:text-[16px]'>/mo</span></p>
                     <ul className='text-[#627382] text-sm md:text-[16px] '>
   {product.features.map((feature, index) => (
     <li key={index} className="flex items-center gap-2">

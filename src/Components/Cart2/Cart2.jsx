@@ -18,7 +18,7 @@ const steps = [
   },
   {
     id: 3,
-    title: "Start Using",
+    title: "Start Creating",
     desc: "Download and start using your premium tools immediately..",
     img: Rocket
   }
