@@ -20,6 +20,7 @@ const ProductCard = ({carts,setCarts}) => {
         console.log(carts);
         toast.success('item added to cart')
     }
+    const isInCart=(id)=>carts.find(c=>c.id===id) // eita diye check korbo je cart er moddhe oi product ta ache kina jodi thake tahole button ta disabled kore debo
     console.log(carts)
 
     return (
@@ -49,8 +50,24 @@ const ProductCard = ({carts,setCarts}) => {
 </ul>
                     
                      </div>
-                     <div className='text-center'>
-                        <button onClick={()=>addToCart(product)}  className='btn btn-wide bg-linear-to-r from-blue-500 to-purple-600 rounded-full'>Buy Now</button>
+                     <div className='text-center pl-12'>
+          <button 
+  disabled={isInCart(product.id)}
+  onClick={() => addToCart(product)}
+  className={`btn btn-wide rounded-full flex items-center justify-center gap-2
+    ${isInCart(product.id)
+      ? "!bg-green-500 !text-white"
+      : "bg-gradient-to-r from-blue-500 to-purple-600 text-white"}
+  `}
+>
+  {isInCart(product.id) ? (
+    <>
+      <FaCheck /> Added to Cart
+    </>
+  ) : (
+    "Buy Now"
+  )}
+</button>
                      </div>
                    </div>
                 ))
